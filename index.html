@@ -3,33 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dushyant Mohan — Business Development &amp; Partnerships</title>
-<meta name="description" content="Dushyant Mohan — business development and partnerships professional across FMCG, construction, and ed-tech, based in Dubai.">
+<title>Dushyant Mohan — Business Development &amp; Partnerships, Dubai</title>
+<meta name="description" content="Dushyant Mohan is a business development and partnerships professional based in Dubai, working across FMCG, construction, and ed-tech, and building Fensce.">
+<link rel="canonical" href="https://dushyantmohan.github.io/">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Dushyant Mohan">
+<meta name="theme-color" content="#0B1420">
+
+<!-- Open Graph -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Dushyant Mohan — Business Development & Partnerships">
+<meta property="og:description" content="Business development and partnerships professional based in Dubai, working across FMCG, construction, and ed-tech. Founder of Fensce.">
+<meta property="og:url" content="https://dushyantmohan.github.io/">
+<meta property="og:image" content="https://dushyantmohan.github.io/profile.jpg">
+<meta property="og:site_name" content="Dushyant Mohan">
+<meta property="profile:first_name" content="Dushyant">
+<meta property="profile:last_name" content="Mohan">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Dushyant Mohan — Business Development & Partnerships">
+<meta name="twitter:description" content="Business development and partnerships professional based in Dubai, working across FMCG, construction, and ed-tech.">
+<meta name="twitter:image" content="https://dushyantmohan.github.io/profile.jpg">
+<meta name="twitter:site" content="@23dushy">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=Spectral:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": "https://dushyantmohan.github.io/#person",
   "name": "Dushyant Mohan",
   "jobTitle": "Business Development & Partnerships Professional",
+  "description": "Business development and partnerships professional with a computer science background, working across FMCG, construction, and ed-tech.",
   "url": "https://dushyantmohan.github.io",
   "image": "https://dushyantmohan.github.io/profile.jpg",
   "worksFor": {
     "@type": "Organization",
-    "name": "Fensce"
+    "name": "Fensce",
+    "founder": { "@id": "https://dushyantmohan.github.io/#person" }
   },
   "alumniOf": [
-    {
-      "@type": "CollegeOrUniversity",
-      "name": "University of Wollongong in Dubai"
-    },
-    {
-      "@type": "CollegeOrUniversity",
-      "name": "American University of Sharjah"
-    }
+    { "@type": "CollegeOrUniversity", "name": "University of Wollongong in Dubai" },
+    { "@type": "CollegeOrUniversity", "name": "American University of Sharjah" }
   ],
   "address": {
     "@type": "PostalAddress",
@@ -37,6 +56,7 @@
     "addressCountry": "AE"
   },
   "knowsLanguage": ["English", "Hindi", "Urdu", "Gujarati", "French", "Punjabi", "Arabic"],
+  "knowsAbout": ["Business Development", "Partnerships", "Go-to-Market Strategy", "FMCG", "Construction", "Ed-tech"],
   "sameAs": [
     "https://www.linkedin.com/in/dushyantmohan/",
     "https://www.researchgate.net/profile/Dushyant-Mohan",
@@ -48,368 +68,416 @@
 
 <style>
   :root {
-    --paper: #EDE7D8;
-    --paper-raised: #F4EFE2;
-    --ink: #1E2A38;
-    --ink-soft: #5B6470;
-    --stamp: #35624F;
-    --stamp-soft: #E4EBE6;
-    --line: #C7BBA0;
-    --gold: #A6763D;
+    --bg-0: #0A121C;
+    --bg-1: #0E1B29;
+    --ink: #EDF1F5;
+    --ink-soft: #93A3B5;
+    --ink-faint: #5C6C7E;
+    --gold: #D9B074;
+    --teal: #5FD1C0;
+    --glass: rgba(255,255,255,0.055);
+    --glass-border: rgba(255,255,255,0.10);
   }
 
   * { box-sizing: border-box; }
-
   html { scroll-behavior: smooth; }
 
   body {
     margin: 0;
-    background: var(--paper);
+    min-height: 100vh;
+    background: var(--bg-0);
     color: var(--ink);
-    font-family: 'Spectral', Georgia, serif;
-    font-size: 17px;
+    font-family: 'Inter', -apple-system, sans-serif;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    position: relative;
+    overflow-x: hidden;
   }
 
-  .sheet {
-    max-width: 680px;
+  .mesh {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    background:
+      radial-gradient(ellipse 700px 500px at 15% 10%, rgba(217,176,116,0.18), transparent 60%),
+      radial-gradient(ellipse 800px 600px at 90% 25%, rgba(95,209,192,0.14), transparent 60%),
+      radial-gradient(ellipse 900px 700px at 50% 100%, rgba(60,100,160,0.16), transparent 60%),
+      linear-gradient(180deg, var(--bg-0), var(--bg-1));
+    animation: drift 26s ease-in-out infinite alternate;
+  }
+  @keyframes drift {
+    0%   { filter: hue-rotate(0deg) brightness(1); }
+    100% { filter: hue-rotate(8deg) brightness(1.06); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .mesh { animation: none; }
+    html { scroll-behavior: auto; }
+  }
+
+  .wrap {
+    position: relative;
+    z-index: 1;
+    max-width: 760px;
     margin: 0 auto;
-    padding: 56px 28px 80px;
+    padding: 64px 24px 90px;
   }
 
   .label {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 12.5px;
-    letter-spacing: 0.02em;
-    color: var(--ink-soft);
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
   }
 
-  /* Header / stamp block */
-  .masthead {
+  .glass {
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    backdrop-filter: blur(22px) saturate(140%);
+    -webkit-backdrop-filter: blur(22px) saturate(140%);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.06);
+  }
+
+  .passport {
+    padding: 36px 32px;
+    position: relative;
+    overflow: hidden;
+  }
+  .passport::before {
+    content: "";
+    position: absolute;
+    top: -40%; right: -20%;
+    width: 320px; height: 320px;
+    background: radial-gradient(circle, rgba(217,176,116,0.25), transparent 70%);
+    pointer-events: none;
+  }
+
+  .passport-top {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 24px;
-    padding-bottom: 28px;
-    border-bottom: 2px solid var(--ink);
+    gap: 20px;
   }
 
-  .masthead-name {
+  .name {
     font-family: 'Fraunces', serif;
     font-optical-sizing: auto;
     font-weight: 600;
-    font-size: clamp(38px, 7vw, 54px);
-    line-height: 1.03;
-    letter-spacing: -0.01em;
-    margin: 0 0 10px;
+    font-size: clamp(36px, 6.5vw, 50px);
+    line-height: 1.02;
+    letter-spacing: -0.015em;
+    margin: 6px 0 8px;
+    background: linear-gradient(135deg, #FFFFFF 30%, var(--gold) 110%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
-  .masthead-role {
+  .role {
     font-family: 'Fraunces', serif;
     font-style: italic;
-    font-weight: 400;
-    font-size: 19px;
+    font-size: 18px;
     color: var(--ink-soft);
     margin: 0;
   }
 
-  .stamp {
-    flex-shrink: 0;
-    width: 84px;
-    height: 84px;
-    border: 1.5px solid var(--stamp);
-    border-radius: 50%;
+  .locus {
+    margin-top: 16px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    color: var(--teal);
     display: flex;
     align-items: center;
-    justify-content: center;
-    transform: rotate(-6deg);
+    gap: 8px;
   }
-  .stamp-inner {
-    width: 70px;
-    height: 70px;
-    border: 1px dashed var(--stamp);
+  .locus::before {
+    content: "";
+    width: 6px; height: 6px;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: var(--teal);
+    box-shadow: 0 0 8px var(--teal);
+  }
+
+  .chip-seal {
+    flex-shrink: 0;
+    width: 78px; height: 78px;
+    border-radius: 50%;
+    border: 1px solid rgba(217,176,116,0.5);
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(217,176,116,0.06);
+  }
+  .chip-seal-inner {
+    width: 62px; height: 62px;
+    border-radius: 50%;
+    border: 1px dashed rgba(217,176,116,0.55);
+    display: flex; align-items: center; justify-content: center;
     text-align: center;
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 9px;
+    font-size: 8.5px;
     letter-spacing: 0.08em;
-    color: var(--stamp);
+    color: var(--gold);
     line-height: 1.3;
   }
 
-  .locus {
-    margin-top: 14px;
+  .mrz {
+    margin-top: 28px;
+    padding-top: 18px;
+    border-top: 1px dashed var(--glass-border);
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 13px;
-    color: var(--ink-soft);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: var(--ink-faint);
+    word-break: break-all;
+    line-height: 1.7;
   }
 
-  /* Sections */
-  section {
-    margin-top: 44px;
-  }
+  section { margin-top: 36px; }
 
   .section-head {
     display: flex;
     align-items: baseline;
-    gap: 10px;
-    margin-bottom: 18px;
+    gap: 12px;
+    margin-bottom: 16px;
+    padding: 0 4px;
   }
-
-  .section-head .label {
-    white-space: nowrap;
-  }
-
   .section-head::after {
     content: "";
     flex: 1;
     height: 1px;
-    background: var(--line);
+    background: var(--glass-border);
   }
 
-  .bio {
-    font-size: 17.5px;
-  }
+  .bio-card { padding: 28px 30px; font-size: 16.5px; color: #DCE4EC; }
+  .bio-card p + p { margin-top: 14px; }
 
-  .bio p + p { margin-top: 14px; }
-
-  /* Manifest entries (experience) */
   .entry {
-    display: grid;
-    grid-template-columns: 34px 1fr;
-    gap: 4px 16px;
-    padding: 18px 0;
-    border-top: 1px solid var(--line);
+    padding: 22px 26px;
+    margin-bottom: 14px;
+    transition: border-color 0.2s ease, transform 0.2s ease;
   }
-  .entry:last-child { padding-bottom: 0; }
+  .entry:hover {
+    border-color: rgba(95,209,192,0.35);
+    transform: translateY(-2px);
+  }
+  .entry:last-child { margin-bottom: 0; }
 
-  .entry-index {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 13px;
-    color: var(--stamp);
-    padding-top: 3px;
+  .entry-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
   }
 
   .entry-org {
     font-family: 'Fraunces', serif;
     font-weight: 500;
     font-size: 20px;
-    margin: 0 0 2px;
+    color: var(--ink);
+  }
+
+  .entry-index {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11.5px;
+    color: var(--gold);
   }
 
   .entry-role {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 12.5px;
-    color: var(--ink-soft);
-    margin-bottom: 8px;
+    font-size: 12px;
+    color: var(--ink-faint);
+    margin: 3px 0 10px;
   }
 
-  .entry-body {
-    font-size: 16px;
-  }
+  .entry-body { font-size: 15.5px; color: #C7D2DC; }
 
   .entry-route {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 12px;
-    background: var(--stamp-soft);
-    color: var(--stamp);
-    padding: 3px 9px;
-    border-radius: 3px;
-    margin-top: 10px;
+    font-size: 11.5px;
+    background: rgba(95,209,192,0.10);
+    border: 1px solid rgba(95,209,192,0.25);
+    color: var(--teal);
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-top: 12px;
   }
 
-  /* Education */
-  .edu-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 16px;
-    padding: 12px 0;
-    border-top: 1px solid var(--line);
-  }
-  .edu-row:last-child { border-bottom: 1px solid var(--line); }
-
-  .edu-name {
-    font-family: 'Fraunces', serif;
-    font-weight: 500;
-    font-size: 17px;
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
   }
 
-  .edu-meta {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 12.5px;
-    color: var(--ink-soft);
-    text-align: right;
-    white-space: nowrap;
-  }
+  .edu-card { padding: 20px 22px; }
+  .edu-name { font-family: 'Fraunces', serif; font-weight: 500; font-size: 16.5px; margin-bottom: 6px; }
+  .edu-meta { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: var(--ink-faint); }
 
-  /* Languages */
-  .lang-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
+  .lang-card { padding: 24px 26px; }
+  .lang-grid { display: flex; flex-wrap: wrap; gap: 8px; }
   .lang-chip {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 12.5px;
-    padding: 5px 11px;
-    border: 1px solid var(--line);
-    border-radius: 3px;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 1px solid var(--glass-border);
     color: var(--ink-soft);
   }
-  .lang-chip.native { border-color: var(--stamp); color: var(--stamp); }
+  .lang-chip.native { border-color: rgba(217,176,116,0.4); color: var(--gold); }
 
-  /* Footer / contact */
-  .contact {
-    margin-top: 56px;
-    padding-top: 24px;
-    border-top: 2px solid var(--ink);
+  .contact-card {
+    padding: 30px 30px 26px;
+    text-align: center;
   }
-
   .contact-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px 0;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 13.5px;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 14px;
   }
-
   .contact-links a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
     color: var(--ink);
     text-decoration: none;
-    border-bottom: 1px solid var(--gold);
-    padding-bottom: 1px;
+    padding: 9px 18px;
+    border-radius: 24px;
+    border: 1px solid var(--glass-border);
+    background: rgba(255,255,255,0.03);
+    transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
   }
-  .contact-links a:hover { color: var(--stamp); border-color: var(--stamp); }
-
-  .contact-links span.sep {
-    color: var(--line);
-    margin: 0 10px;
+  .contact-links a:hover {
+    border-color: var(--teal);
+    color: var(--teal);
+    background: rgba(95,209,192,0.08);
   }
 
   .footnote {
-    margin-top: 28px;
+    margin-top: 40px;
+    text-align: center;
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 11.5px;
-    color: var(--ink-soft);
+    font-size: 11px;
+    color: var(--ink-faint);
   }
 
-  @media (max-width: 480px) {
-    .sheet { padding: 40px 20px 60px; }
-    .masthead { flex-direction: column-reverse; }
-    .stamp { align-self: flex-end; }
-    .edu-row { flex-direction: column; align-items: flex-start; gap: 4px; }
-    .edu-meta { text-align: left; }
+  @media (max-width: 560px) {
+    .wrap { padding: 44px 16px 70px; }
+    .passport { padding: 28px 22px; }
+    .passport-top { flex-direction: column-reverse; }
+    .chip-seal { align-self: flex-end; }
+    .grid-2 { grid-template-columns: 1fr; }
   }
 
-  @media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
-  }
-
-  a:focus-visible, button:focus-visible {
-    outline: 2px solid var(--stamp);
-    outline-offset: 2px;
-  }
+  a:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
 </style>
 </head>
 <body>
-<div class="sheet">
+<div class="mesh" aria-hidden="true"></div>
 
-  <header class="masthead">
-    <div>
-      <h1 class="masthead-name">Dushyant<br>Mohan</h1>
-      <p class="masthead-role">Business development &amp; partnerships</p>
-      <div class="locus">Dubai, UAE</div>
+<div class="wrap">
+
+  <header class="glass passport">
+    <div class="passport-top">
+      <div>
+        <span class="label">Profile / Entry Record</span>
+        <h1 class="name">Dushyant<br>Mohan</h1>
+        <p class="role">Business development &amp; partnerships</p>
+        <div class="locus">Dubai, United Arab Emirates</div>
+      </div>
+      <div class="chip-seal">
+        <div class="chip-seal-inner">VERIFIED<br>ENTRY</div>
+      </div>
     </div>
-    <div class="stamp">
-      <div class="stamp-inner">VERIFIED<br>ENTRY</div>
+    <div class="mrz">
+      P&lt;MOHAN&lt;&lt;DUSHYANT&lt;&lt;&lt;&lt;&lt;&lt;BD&amp;PARTNERSHIPS&lt;&lt;&lt;&lt;<br>
+      DXB&lt;&lt;UOWD2027&lt;&lt;FMCG&lt;CONSTRUCTION&lt;EDTECH&lt;&lt;FENSCE
     </div>
   </header>
 
   <section id="about">
-    <div class="section-head"><span class="label">about</span></div>
-    <div class="bio">
+    <div class="section-head"><span class="label">About</span></div>
+    <div class="glass bio-card">
       <p>I'm a business development and partnerships professional with a computer science background. Over the last three years I've worked across FMCG, construction, and ed-tech — building go-to-market motions, managing platform partnerships, and growing revenue in each.</p>
       <p>I'm currently finishing a degree in International Business at the University of Wollongong in Dubai, after starting out in computer science at the American University of Sharjah. Alongside that, I'm building Fensce, a sovereign intelligence platform, where I lead commercial strategy and partnerships.</p>
     </div>
   </section>
 
   <section id="experience">
-    <div class="section-head"><span class="label">experience</span></div>
+    <div class="section-head"><span class="label">Experience</span></div>
 
-    <div class="entry">
-      <div class="entry-index">01</div>
-      <div>
-        <div class="entry-org">Fensce</div>
-        <div class="entry-role">founder — commercial &amp; partnerships</div>
-        <div class="entry-body">Solo-founded a sovereign, on-premise intelligence platform fusing live AIS, ADS-B, and OSINT feeds. I lead commercial strategy, positioning, and partner outreach.</div>
+    <div class="glass entry">
+      <div class="entry-top">
+        <span class="entry-org">Fensce</span>
+        <span class="entry-index">01</span>
       </div>
+      <div class="entry-role">Founder — Commercial &amp; Partnerships</div>
+      <div class="entry-body">Solo-founded a sovereign, on-premise intelligence platform fusing live AIS, ADS-B, and OSINT feeds. Leading commercial strategy, positioning, and partner outreach.</div>
     </div>
 
-    <div class="entry">
-      <div class="entry-index">02</div>
-      <div>
-        <div class="entry-org">RYZE / Edible Dreams FZ-LLC</div>
-        <div class="entry-role">business development</div>
-        <div class="entry-body">Grew monthly sales 120% for a UAE kombucha and cold brew brand, managing partnerships across Noon, Talabat, Careem Quik, and Deliveroo.</div>
-        <div class="entry-route">FMCG → delivery platforms</div>
+    <div class="glass entry">
+      <div class="entry-top">
+        <span class="entry-org">RYZE / Edible Dreams FZ-LLC</span>
+        <span class="entry-index">02</span>
       </div>
+      <div class="entry-role">Business Development</div>
+      <div class="entry-body">Grew monthly sales 120% for a UAE kombucha and cold brew brand, managing partnerships across Noon, Talabat, Careem Quik, and Deliveroo.</div>
+      <div class="entry-route">FMCG → delivery platforms</div>
     </div>
 
-    <div class="entry">
-      <div class="entry-index">03</div>
-      <div>
-        <div class="entry-org">Apexa Ventures</div>
-        <div class="entry-role">business development — Gujarat, India</div>
-        <div class="entry-body">Contributed to a 44% revenue lift at a waterproofing and construction company through commercial and operational work.</div>
-        <div class="entry-route">construction → revenue growth</div>
+    <div class="glass entry">
+      <div class="entry-top">
+        <span class="entry-org">Apexa Ventures</span>
+        <span class="entry-index">03</span>
       </div>
+      <div class="entry-role">Business Development — Gujarat, India</div>
+      <div class="entry-body">Contributed to a 44% revenue lift at a waterproofing and construction company through commercial and operational work.</div>
+      <div class="entry-route">construction → revenue growth</div>
     </div>
   </section>
 
   <section id="education">
-    <div class="section-head"><span class="label">education</span></div>
-
-    <div class="edu-row">
-      <div class="edu-name">University of Wollongong in Dubai</div>
-      <div class="edu-meta">Int'l Business · through 2027</div>
-    </div>
-    <div class="edu-row">
-      <div class="edu-name">American University of Sharjah</div>
-      <div class="edu-meta">Computer Science</div>
+    <div class="section-head"><span class="label">Education</span></div>
+    <div class="grid-2">
+      <div class="glass edu-card">
+        <div class="edu-name">University of Wollongong in Dubai</div>
+        <div class="edu-meta">Int'l Business · through 2027</div>
+      </div>
+      <div class="glass edu-card">
+        <div class="edu-name">American University of Sharjah</div>
+        <div class="edu-meta">Computer Science</div>
+      </div>
     </div>
   </section>
 
   <section id="languages">
-    <div class="section-head"><span class="label">languages</span></div>
-    <div class="lang-grid">
-      <span class="lang-chip native">English</span>
-      <span class="lang-chip native">Hindi</span>
-      <span class="lang-chip native">Urdu</span>
-      <span class="lang-chip native">Gujarati</span>
-      <span class="lang-chip">French</span>
-      <span class="lang-chip">Punjabi</span>
-      <span class="lang-chip">Arabic — learning</span>
+    <div class="section-head"><span class="label">Languages</span></div>
+    <div class="glass lang-card">
+      <div class="lang-grid">
+        <span class="lang-chip native">English</span>
+        <span class="lang-chip native">Hindi</span>
+        <span class="lang-chip native">Urdu</span>
+        <span class="lang-chip native">Gujarati</span>
+        <span class="lang-chip">French</span>
+        <span class="lang-chip">Punjabi</span>
+        <span class="lang-chip">Arabic — learning</span>
+      </div>
     </div>
   </section>
 
-  <footer class="contact" id="contact">
-    <div class="section-head"><span class="label">contact</span></div>
-    <div class="contact-links">
-      <a href="https://www.linkedin.com/in/dushyantmohan/" target="_blank" rel="noopener">LinkedIn</a>
-      <span class="sep">/</span>
-      <a href="https://github.com/Dushyantmohan" target="_blank" rel="noopener">GitHub</a>
-      <span class="sep">/</span>
-      <a href="https://www.researchgate.net/profile/Dushyant-Mohan" target="_blank" rel="noopener">ResearchGate</a>
-      <span class="sep">/</span>
-      <a href="https://x.com/23dushy" target="_blank" rel="noopener">X</a>
+  <footer id="contact">
+    <div class="section-head"><span class="label">Contact</span></div>
+    <div class="glass contact-card">
+      <span class="label" style="opacity:0.7;">Reach out</span>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/dushyantmohan/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/Dushyantmohan" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.researchgate.net/profile/Dushyant-Mohan" target="_blank" rel="noopener">ResearchGate</a>
+        <a href="https://x.com/23dushy" target="_blank" rel="noopener">X</a>
+      </div>
     </div>
     <div class="footnote">dushyantmohan.github.io</div>
   </footer>

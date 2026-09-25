@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dushyantmohan.github.io/sitemap.xml
