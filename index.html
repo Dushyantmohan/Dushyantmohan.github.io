@@ -14,7 +14,7 @@
 <meta property="og:title" content="Dushyant Mohan | Business Development & Partnerships">
 <meta property="og:description" content="Business development and partnerships professional based in Dubai, working across FMCG, construction, and ed-tech. Founder of Fensce, author of APEX-AGI.">
 <meta property="og:url" content="https://dushyantmohan.github.io/">
-<meta property="og:image" content="https://dushyantmohan.github.io/profile.jpg">
+<meta property="og:image" content="https://dushyantmohan.github.io/images/profile.png">
 <meta property="og:site_name" content="Dushyant Mohan">
 <meta property="profile:first_name" content="Dushyant">
 <meta property="profile:last_name" content="Mohan">
@@ -22,12 +22,12 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Dushyant Mohan | Business Development & Partnerships">
 <meta name="twitter:description" content="Business development and partnerships professional based in Dubai, working across FMCG, construction, and ed-tech.">
-<meta name="twitter:image" content="https://dushyantmohan.github.io/profile.jpg">
+<meta name="twitter:image" content="https://dushyantmohan.github.io/images/profile.png">
 <meta name="twitter:site" content="@23dushy">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,500&family=Public+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
@@ -43,7 +43,7 @@
       "description": "Business development and partnerships professional with a computer science background, working across FMCG, construction, and ed-tech. Founder of Fensce and author of APEX-AGI.",
       "url": "https://dushyantmohan.github.io",
       "mainEntityOfPage": { "@id": "https://dushyantmohan.github.io/#webpage" },
-      "image": "https://dushyantmohan.github.io/profile.jpg",
+      "image": "https://dushyantmohan.github.io/images/profile.png",
       "worksFor": [
         { "@type": "Organization", "name": "Fensce", "founder": { "@id": "https://dushyantmohan.github.io/#person" } },
         { "@type": "Organization", "name": "Apexa Ventures", "url": "https://apexaventures.com" }
@@ -70,7 +70,7 @@
       "inLanguage": "en",
       "isPartOf": { "@id": "https://dushyantmohan.github.io/#website" },
       "about": { "@id": "https://dushyantmohan.github.io/#person" },
-      "primaryImageOfPage": "https://dushyantmohan.github.io/profile.jpg"
+      "primaryImageOfPage": "https://dushyantmohan.github.io/images/profile.png"
     },
     {
       "@type": "WebSite",
@@ -134,7 +134,7 @@
   /* Nav */
   nav.top { position: relative; z-index: 2; padding: 22px 0; }
   nav.top .wrap { display: flex; justify-content: space-between; align-items: center; }
-  .brand { font-family: 'Newsreader', serif; font-weight: 800; font-size: 19px; color: var(--ink); }
+  .brand { font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 17px; letter-spacing: -0.01em; color: var(--ink); }
   .brand:hover { text-decoration: none; }
   .navlinks { display: flex; gap: 26px; font-size: 14px; font-weight: 600; }
   .navlinks a { color: var(--ink-soft); }
@@ -169,7 +169,7 @@
   }
   .hero-photo { width: 100%; height: 100%; border-radius: 24px; object-fit: cover; background: var(--card); display: block; }
   .kicker { font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--accent-deep); margin-bottom: 10px; display: block; }
-  h1.headline { font-family: 'Newsreader', serif; font-weight: 700; font-size: clamp(34px, 4.6vw, 50px); line-height: 1.08; letter-spacing: -0.015em; margin: 0 0 18px; }
+  .headline { font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: clamp(30px, 4.2vw, 44px); line-height: 1.12; letter-spacing: -0.01em; margin: 0 0 18px; }
   .intro { font-size: 18.5px; line-height: 1.65; color: var(--ink-soft); max-width: 62ch; }
   .intro a { font-weight: 600; }
   .locus-row { margin-top: 22px; display: flex; gap: 18px; flex-wrap: wrap; font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; color: var(--ink-faint); }
@@ -186,14 +186,15 @@
     display: flex; align-items: center; justify-content: center;
     color: #fff; text-align: center; padding: 20px;
     font-family: 'IBM Plex Mono', monospace; font-size: 12.5px;
+    overflow: hidden;
   }
   .slide-media.fensce { background: linear-gradient(135deg, var(--sage), var(--accent)); }
-  .slide-media.ryze { background: linear-gradient(135deg, var(--sand), var(--gold)); }
+  .slide-media.ryze { background: var(--card); min-height: 420px; padding: 0; }
   .slide-media.apexa { background: linear-gradient(135deg, var(--mint), #1F8A70); }
   .slide-media video, .slide-media img.real { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-  .media-placeholder { border: 1.5px dashed rgba(255,255,255,0.7); border-radius: 12px; padding: 16px 20px; background: rgba(0,0,0,0.08); }
+  .slide-media.ryze iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
   .slide-body { padding: 34px 36px; display: flex; flex-direction: column; justify-content: center; }
-  .slide-org { font-family: 'Newsreader', serif; font-weight: 700; font-size: 24px; margin-bottom: 6px; }
+  .slide-org { font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 21px; margin-bottom: 6px; }
   .slide-org a { color: var(--ink); }
   .slide-org a:hover { color: var(--accent-deep); }
   .slide-role { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--ink-faint); margin-bottom: 14px; }
@@ -207,6 +208,7 @@
   @media (max-width: 700px) {
     .slide { grid-template-columns: 1fr; }
     .slide-media { min-height: 190px; }
+    .slide-media.ryze { min-height: 360px; }
   }
 
   /* Press */
@@ -219,7 +221,7 @@
   }
   .press-card:hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(30,60,40,0.08); border-color: var(--accent); text-decoration: none; }
   .press-source { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--gold); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 10px; }
-  .press-title { font-family: 'Newsreader', serif; font-weight: 600; font-size: 17px; line-height: 1.3; color: var(--ink); margin-bottom: 8px; }
+  .press-title { font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 15px; line-height: 1.35; color: var(--ink); margin-bottom: 8px; }
   .press-desc { font-size: 13.5px; color: var(--ink-soft); margin-bottom: 14px; }
   .press-link { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: var(--accent-deep); }
   @media (max-width: 800px) {
@@ -230,7 +232,7 @@
   .paper { display: block; padding: 20px 0; border-bottom: 1px solid var(--line); }
   .paper:last-child { border-bottom: none; }
   .paper-kicker { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--gold); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 6px; }
-  .paper-title { font-family: 'Newsreader', serif; font-weight: 600; font-size: 19px; color: var(--ink); margin-bottom: 6px; }
+  .paper-title { font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 16.5px; line-height: 1.4; color: var(--ink); margin-bottom: 6px; }
   .paper:hover .paper-title { color: var(--accent-deep); }
   .paper-desc { font-size: 15px; color: var(--ink-soft); }
 
@@ -257,13 +259,14 @@
 
   /* Education / languages */
   .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-  .edu-name { font-family: 'Newsreader', serif; font-weight: 600; font-size: 16px; margin-bottom: 4px; }
+  .edu-name { font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 14.5px; margin-bottom: 4px; }
   .edu-name a { color: var(--ink); }
   .edu-name a:hover { color: var(--accent-deep); }
   .edu-meta { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: var(--ink-faint); }
-  .lang-grid { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
-  .lang-chip { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; padding: 5px 12px; border-radius: 20px; border: 1px solid var(--line); color: var(--ink-soft); background: var(--card); }
-  .lang-chip.native { border-color: var(--gold); color: var(--gold); }
+  .lang-block { margin-top: 20px; display: flex; flex-direction: column; gap: 12px; }
+  .lang-row { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+  .lang-key { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--ink-faint); text-transform: uppercase; letter-spacing: .04em; width: 84px; flex-shrink: 0; }
+  .lang-chip { font-family: 'IBM Plex Mono', monospace; font-size: 12px; padding: 5px 12px; border-radius: 8px; border: 1px solid var(--line); color: var(--ink-soft); background: var(--card); }
 
   footer.contact { text-align: center; padding: 50px 0 60px; }
   .mail-button {
@@ -322,7 +325,7 @@
 
   <header class="hero" id="top">
     <div class="hero-photo-frame">
-      <img class="hero-photo" src="https://i1.rgstatic.net/ii/profile.image/11431282321823132-1785679463342_Q512/Dushyant-Mohan.jpg" alt="Dushyant Mohan" onerror="this.style.display='none'">
+      <img class="hero-photo" src="images/profile.png" alt="Dushyant Mohan">
     </div>
     <div>
       <span class="kicker">Dubai, UAE</span>
@@ -344,9 +347,7 @@
 
         <div class="slide">
           <div class="slide-media fensce">
-            <!-- To activate: replace this div with
-                 <video autoplay muted loop playsinline poster="fensce-poster.jpg"><source src="fensce-demo.mp4" type="video/mp4"></video> -->
-            <div class="media-placeholder">Drop in a Fensce demo video or screenshot here<br>(fensce-demo.mp4 / fensce.jpg)</div>
+            <img class="real" src="images/fensce-console.jpg" alt="Fensce operating picture console showing live vessel and aircraft tracking">
           </div>
           <div class="slide-body">
             <div class="slide-org">Fensce</div>
@@ -358,7 +359,7 @@
 
         <div class="slide">
           <div class="slide-media ryze">
-            <div class="media-placeholder">Drop in a RYZE product or campaign photo here<br>(ryze.jpg)</div>
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7496171730428891136?collapsed=1" frameborder="0" allowfullscreen title="RYZE funding round, LinkedIn post"></iframe>
           </div>
           <div class="slide-body">
             <div class="slide-org"><a href="https://ryzeae.com" target="_blank" rel="noopener">RYZE</a> <span style="font-weight:400; color:var(--ink-faint); font-size:16px;">/ Edible Dreams FZ-LLC</span></div>
@@ -370,7 +371,7 @@
 
         <div class="slide">
           <div class="slide-media apexa">
-            <div class="media-placeholder">Drop in an Apexa Ventures project photo here<br>(apexa.jpg)</div>
+            <img class="real" src="images/apexa.jpg" alt="Waterproofing repair in progress at an Apexa Ventures construction site">
           </div>
           <div class="slide-body">
             <div class="slide-org"><a href="https://apexaventures.com" target="_blank" rel="noopener">Apexa Ventures</a></div>
@@ -472,14 +473,20 @@
         <div class="edu-meta">Computer Science</div>
       </div>
     </div>
-    <div class="lang-grid">
-      <span class="lang-chip native">English</span>
-      <span class="lang-chip native">Hindi</span>
-      <span class="lang-chip native">Urdu</span>
-      <span class="lang-chip native">Gujarati</span>
-      <span class="lang-chip">French</span>
-      <span class="lang-chip">Punjabi</span>
-      <span class="lang-chip">Arabic (learning)</span>
+    <div class="lang-block">
+      <div class="lang-row">
+        <span class="lang-key">Native</span>
+        <span class="lang-chip">English</span>
+        <span class="lang-chip">Hindi</span>
+        <span class="lang-chip">Urdu</span>
+        <span class="lang-chip">Gujarati</span>
+      </div>
+      <div class="lang-row">
+        <span class="lang-key">Also speak</span>
+        <span class="lang-chip">French</span>
+        <span class="lang-chip">Punjabi</span>
+        <span class="lang-chip">Arabic (learning)</span>
+      </div>
     </div>
   </section>
 
@@ -507,10 +514,10 @@
 
   // Soft moss, sky and sun-gold blobs drifting slowly, like light through leaves.
   var blobs = [
-    { hue: [46, 139, 87],  rx: 0.28, ry: 0.22, r: 340, speed: 0.00018, phase: 0 },
-    { hue: [92, 179, 224], rx: 0.72, ry: 0.30, r: 300, speed: 0.00014, phase: 2.1 },
-    { hue: [201, 147, 42], rx: 0.45, ry: 0.68, r: 260, speed: 0.00021, phase: 4.2 },
-    { hue: [46, 139, 87],  rx: 0.85, ry: 0.75, r: 280, speed: 0.00016, phase: 1.4 }
+    { hue: [46, 139, 87],  rx: 0.28, ry: 0.22, r: 320, speed: 0.00011, phase: 0 },
+    { hue: [92, 179, 224], rx: 0.72, ry: 0.30, r: 280, speed: 0.00009, phase: 2.1 },
+    { hue: [201, 147, 42], rx: 0.45, ry: 0.68, r: 240, speed: 0.00013, phase: 4.2 },
+    { hue: [46, 139, 87],  rx: 0.85, ry: 0.75, r: 260, speed: 0.00010, phase: 1.4 }
   ];
 
   function resize() {
@@ -526,7 +533,7 @@
       var cx = w * (b.rx + 0.06 * Math.sin(t * b.speed + b.phase));
       var cy = h * (b.ry + 0.05 * Math.cos(t * b.speed * 1.3 + b.phase));
       var grad = ctx.createRadialGradient(cx, cy, 0, cx, cy, b.r);
-      grad.addColorStop(0, 'rgba(' + b.hue[0] + ',' + b.hue[1] + ',' + b.hue[2] + ',0.10)');
+      grad.addColorStop(0, 'rgba(' + b.hue[0] + ',' + b.hue[1] + ',' + b.hue[2] + ',0.045)');
       grad.addColorStop(1, 'rgba(' + b.hue[0] + ',' + b.hue[1] + ',' + b.hue[2] + ',0)');
       ctx.fillStyle = grad;
       ctx.fillRect(0, 0, w, h);
